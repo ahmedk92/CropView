@@ -12,6 +12,7 @@
 		28B5E3EB23A4FCD200BFB122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B5E3E923A4FCD200BFB122 /* Main.storyboard */; };
 		28B5E3ED23A4FCD300BFB122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B5E3EC23A4FCD300BFB122 /* Assets.xcassets */; };
 		28B5E3F023A4FCD300BFB122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B5E3EE23A4FCD300BFB122 /* LaunchScreen.storyboard */; };
+		28B5E3F823A4FD3100BFB122 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5E3F723A4FD3100BFB122 /* CropView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		28B5E3EC23A4FCD300BFB122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28B5E3EF23A4FCD300BFB122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28B5E3F123A4FCD300BFB122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B5E3F723A4FD3100BFB122 /* CropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				28B5E3E523A4FCD200BFB122 /* AppDelegate.swift */,
-				28B5E3E723A4FCD200BFB122 /* ViewController.swift */,
-				28B5E3E923A4FCD200BFB122 /* Main.storyboard */,
 				28B5E3EC23A4FCD300BFB122 /* Assets.xcassets */,
-				28B5E3EE23A4FCD300BFB122 /* LaunchScreen.storyboard */,
+				28B5E3F723A4FD3100BFB122 /* CropView.swift */,
 				28B5E3F123A4FCD300BFB122 /* Info.plist */,
+				28B5E3EE23A4FCD300BFB122 /* LaunchScreen.storyboard */,
+				28B5E3E923A4FCD200BFB122 /* Main.storyboard */,
+				28B5E3E723A4FCD200BFB122 /* ViewController.swift */,
 			);
 			path = CropView;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				28B5E3E823A4FCD200BFB122 /* ViewController.swift in Sources */,
 				28B5E3E623A4FCD200BFB122 /* AppDelegate.swift in Sources */,
+				28B5E3F823A4FD3100BFB122 /* CropView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CropView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CropView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
