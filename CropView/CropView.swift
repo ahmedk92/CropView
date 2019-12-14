@@ -210,3 +210,14 @@ extension CGRect {
         self.init(x: minX, y: minY, width: maxX - minX, height: maxY - minY)
     }
 }
+
+// MARK: Actual Cropping
+extension CropView {
+    func apply(to image: UIImage) -> UIImage? {
+        let relativeRect = CGRect(x: holeRect.minX / bounds.width, y: holeRect.minY / bounds.height, width: holeRect.width / bounds.width, height: holeRect.height / bounds.height)
+        let cropRect = CGRect(x: relativeRect.minX * image.size.width, y: relativeRect.minY * image.size.height, width: relativeRect.width * image.size.width, height: relativeRect.height * image.size.height)
+        
+        guard let cgImage = image.cgImage?.cropping(to: cropRect) else { return nil }
+        return UIImage(cgImage: cgImage)
+    }
+}
